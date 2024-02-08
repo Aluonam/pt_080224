@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 const Counter = () => {
+
+    const [number, setNumber] = useState(0)
   return (
-    <div>C</div>
+    <div>
+        <button>+</button>
+        <button>+</button>
+
+    </div>
   )
 }
 
