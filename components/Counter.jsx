@@ -5,8 +5,9 @@ const Counter = () => {
     const [number, setNumber] = useState(0)
   return (
     <div>
-        <button>+</button>
-        <button>+</button>
+        {number}
+        <button onClick={()=>{setNumber(number+1)}} value={number}>+</button>
+        <button onClick={()=>{setNumber(number-1)}} value={number}>-</button>
 
     </div>
   )
