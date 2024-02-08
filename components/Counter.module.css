@@ -1,3 +1,4 @@
+
 .btnYellow {
     min-width: 130px;
     height: 40px;
@@ -24,3 +25,36 @@
   }
 
   
+  .btnBlack {
+    min-width: 130px;
+    height: 40px;
+    color: #fff;
+    padding: 5px 10px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 5px;
+    border: none;
+    background: #343a40;
+    box-shadow: 0 5px #212529;
+  }
+  .btnBlack:hover {
+    box-shadow: 0 3px #212529;
+    top: 1px;
+  }
+  .btnBlack:active {
+    box-shadow: 0 0 #212529;
+    top: 5px;
+  }
+
+
+  .counter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+  }
