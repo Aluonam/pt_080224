@@ -10,9 +10,10 @@ export const Session = () => {
     <div>Session
         
         <h3>Name:</h3>
-        <input type='text' value={user.userName}></input>
+        <input type='text' value={user.userName} onChange={(e)=>{setUser({...user, name: e.target.value})}}></input>
         <h3>Password:</h3>
-        <input type='password' value={user.userPass}></input>
+        <input type='password' value={user.userPass} onChange={(e)=>{setUser({...user, pass: e.target.value})}}></input>
+
     </div>
   )
 }
