@@ -3,15 +3,16 @@ import React, { useState } from 'react'
 export const Session = () => {
 
     const [user, setUser] = useState({
-        userName: '',
-        userPass: ''
+        userName: 'manoli',
+        userPass: '123'
     })
   return (
     <div>Session
+        
         <h3>Name:</h3>
-        <input type='text'></input>
+        <input type='text' value={user.userName}></input>
         <h3>Password:</h3>
-        <input type='password'></input>
+        <input type='password' value={user.userPass}></input>
     </div>
   )
 }
