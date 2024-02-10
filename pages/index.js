@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "@/styles/Home.module.css";
 import Counter from "@/components/counter/Counter";
+import { Session } from "@/components/session/Session";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       </Head>
       <main className={`${styles.main}`}>
         <Counter></Counter>
+        <Session></Session>
       </main>
     </>
   );
